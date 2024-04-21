@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- The head for all of the code that isnt directly of the page -->
+<head>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Homepage  | Betterbarista</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<!-- The body for all of the visible code -->
+<body>
+    <!-- Containts the navigation bar elements -->
+    <div id="navbar">
+        <img src="logo.png" height="41px" width="117px">
+        <a href="index.html">Homepage</a>
+        <a href="encyclopaedia.html">Encyclopaedia</a>
+        <a href="wheel.html">Coffee Wheel</a>
+        <a href="coffeebrew.html">Coffee Brewing</a>
+    </div>
+
+    <!-- The hero section of the page -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Coffee Wheel</h1>
+            <p>Discover the art of coffee with our interactive Coffee Wheel at Betterbarista. Perfect for enthusiasts of all levels, this tool is designed to deepen your understanding of coffee's diverse flavor profiles. Spin the wheel to explore a spectrum of taste notes, from rich chocolatey depths to vibrant fruity zests. Each selection offers tailored recommendations to refine your brewing technique. Embark on a sensory journey, unlock the secrets of coffee nuances, and elevate your barista craft to new heights. Let the Coffee Wheel guide your path to the ultimate cup!</p>
+        </div>
+    </div>
+
+    <!-- The main body of the page -->
+    <div class="main">
+        <!-- This section divides the main body into rows -->
+        <div class="rows">
+            <div class="row1">
+                <!-- This part divides each row into columns -->
+                <div class="column1">
+                    <!-- This is a section for the message directing the user-->
+                    <div class="spinmessage">
+                    <p>Click on the spin button or select your flavour!</p>
+                    </div>
+                    <!-- This is a section for the selected flavour to display-->
+                    <div class="tasteselected">
+                    <p></p>
+                </div>
+                </div>
+                <div class="column2">
+                    <!-- This is a section for the wheel button-->
+                    <div class="wheelbutton"><button id="spinbutton">Click to spin</button></div>
+                    <!-- This is a container for the wheel-->
+                    <div class="wheelsection">
+                        <!-- This is the container for the actual wheel-->
+                        <div class="wheel">
+                    
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="footer">
+            <!-- This section divides the footer into three sections -->
+            <div class="section1">
+                <p>© 2024 Betterbarista.</p>
+                <p>This project is created for educational purposes.</p>
+            </div>
+            
+            <div class="section2">
+                <p>Contact me at: seannmitchelson@gmail.com</p>
+            </div>
+            
+            <div class="section3">
+                <p>Acknowledgements to d3.js</p>
+                <p><a href="index.html">Return to Homepage</a></p>
+            </div>
+        </div>
+    
+    <!-- The scripts for the page -->
+
+    <!-- The script for the navigation bar -->
+    <script src="navbar.js"></script>
+
+    <!-- The script for the coffee wheel-->
+    <script src="coffeewheel.js"></script>
+</body>
+</html>

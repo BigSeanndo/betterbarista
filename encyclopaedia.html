@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- The head for all of the code that isnt directly of the page-->
+<head>
+    <!-- The favicon for the page -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Encyclopaedia | Betterbarista</title>
+    
+    <!-- The stylesheet for the page -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<!-- The body for all of the visible code -->
+<body>
+    <!-- Containts the navigation bar elements -->
+    <div id="navbar">
+        <img src="logo.png" height="41px" width="117px">
+        <a href="index.html">Homepage</a>
+        <a href="encyclopaedia.html">Encyclopaedia</a>
+        <a href="wheel.html">Coffee Wheel</a>
+        <a href="coffeebrew.html">Coffee Brewing</a>
+    </div>
+
+    <!-- The hero section of the page -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Encyclopaedia</h1>
+            <p>Welcome to our Coffee Encyclopaedia! Click on any coffee type to learn how to make it. Whether you’re curious about crafting a creamy Cappuccino or brewing a smooth Americano, we'll show you how. Discover the steps to your perfect cup here!</p>
+        </div>
+    </div>
+
+    <!-- The main body of the page -->
+    <div class="main">
+        <!-- This section divides the main body into rows -->
+        <div class="rows">
+            <div class="row1">
+
+                <!--This creates a container for all the cards in this row -->
+                <div class="card_section">
+
+                    <!-- This is the card showing the photo of the coffee-->
+                    <div class="card">
+                            <!-- This is what is displayed and the text it contains-->
+                            <div class="card_title" data-text="
+                                Latte
+
+                                Ingredients:
+                    
+                                1 shot of espresso
+                                Steamed milk
+                                Optional: Flavoured syrup
+    
+                                Instructions:
+                    
+                                Prepare a shot of espresso
+                                Steam milk until frothy
+                                Pour milk over espresso
+                                Add flavoured syrup if desired
+                            " onclick="showOverlay(this)">
+                                <img src="latte.webp" >
+                                <h1>Latte</h1>
+                            </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_title" data-text="
+                        Americano
+
+                        Ingredients:
+                        
+                        1 shot of espresso
+                        Hot water
+
+                        Instructions:
+                        
+                        Prepare a shot of espresso.
+                        Add hot water to the espresso. The typical ratio is 1:2, espresso to water, but you can adjust to taste.
+                        " onclick="showOverlay(this)">
+                            <img src="black.webp" width="100px" height="100px">
+                            <h1>Americano</h1>
+                        </div>
+                </div>
+                <div class="card">
+                            <div class="card_title" data-text="
+                            Espresso
+
+                            Ingredients:
+                            
+                            Finely ground coffee
+
+                            Instructions:
+                            
+                            Tamp the finely ground coffee into the espresso machine's portafilter.
+                            Brew under high pressure for about 25-30 seconds.
+                            Serve immediately in a small espresso cup.
+                            " onclick="showOverlay(this)">
+                                <img src="espresso.webp" width="100px" height="100px">
+                                <h1>Espresso</h1>
+                            </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card_title" data-text="
+                        Cappuccino
+
+                        Ingredients:
+                        
+                        1 shot of espresso
+                        Steamed milk
+                        Milk foam
+
+                        Instructions:
+                        
+                        Prepare a shot of espresso in a large cup.
+                        Steam milk until frothy and hot.
+                        Pour equal parts of steamed milk and milk foam over the espresso.
+                        Optionally, sprinkle with chocolate or cinnamon on top.
+                        " onclick="showOverlay(this)">
+                            <img src="cappucino.webp" width="100px" height="100px">
+                            <h1>Cappucino</h1>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="card_section">
+                    
+                <div class="card">
+                    <div class="card_title" data-text="
+                    Mocha
+
+                    Ingredients:
+                    
+                    1 shot of espresso
+                    Steamed milk
+                    Chocolate syrup
+
+                    Instructions:
+                    
+                    Prepare a shot of espresso in a large cup.
+                    Mix in chocolate syrup.
+                    Steam milk until frothy and pour over the espresso and chocolate mixture.
+                    Optionally, top with whipped cream and a sprinkle of cocoa powder.
+                    " onclick="showOverlay(this)">
+                        <img src="mocha.webp" width="100px" height="100px">
+                        <h1>Mocha</h1>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card_title" data-text="
+                Flat White
+
+                Ingredients:
+
+                1 shot of espresso
+                Steamed milk
+
+                Instructions:
+
+                Prepare a shot of espresso in a cup.
+                Steam milk until hot and smooth without creating too much foam.
+                Pour the steamed milk over the espresso.
+                " onclick="showOverlay(this)">
+                    <img src="flat.webp" width="100px" height="100px">
+                    <h1>Flat White</h1>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card_title" data-text="
+            Café au Lait
+
+            Ingredients:
+            
+            1 part brewed coffee
+            1 part steamed milk
+
+            Instructions:
+            
+            Brew your coffee as usual.
+            Steam milk until hot.
+            Combine equal parts of the brewed coffee and steamed milk in a large cup.
+            " onclick="showOverlay(this)">
+                <img src="cafe.webp" width="100px" height="100px">
+                <h1>Café au Lait</h1>
+            </div>
+    </div>
+    <div class="card">
+        <div class="card_title" data-text="
+        Cortado
+
+        Ingredients:
+        
+        1 shot of espresso
+        An equal amount of steamed milk
+
+        Instructions:
+        
+        Prepare a shot of espresso in a small glass.
+        Steam milk until hot (avoid frothing).
+        Pour the steamed milk over the espresso, maintaining a 1:1 ratio.
+        " onclick="showOverlay(this)">
+            <img src="cortado.webp" width="100px" height="100px">
+            <h1>Cortado</h1>
+        </div>
+</div>
+            </div>
+            </div>
+            <div class="row3">
+                <div class="card_section">
+                
+        <div class="card">
+            <div class="card_title" data-text="
+            Breve
+
+            Ingredients:
+            
+            1 shot of espresso
+            Half-and-half
+
+            Instructions:
+            
+            Prepare a shot of espresso in a large cup.
+            Steam the half-and-half until hot and frothy.
+            Pour the steamed half-and-half over the espresso.
+            " onclick="showOverlay(this)">
+                <img src="breve.webp" width="100px" height="100px">
+                <h1>Breve</h1>
+            </div>
+            </div> 
+            <div class="card">
+                <div class="card_title" data-text="
+                Macchiato
+
+                Ingredients:
+                
+                1 shot of espresso
+                A dollop of milk foam
+
+                Instructions:
+                
+                Prepare a shot of espresso in an espresso cup.
+                Spoon a small amount of milk foam onto the espresso.
+                " onclick="showOverlay(this)">
+                    <img src="macchiato.webp" width="100px" height="100px">
+                    <h1>Macchiato</h1>
+                </div>
+        </div>
+        <div class="card">
+            <div class="card_title" data-text="
+            Vienna
+
+            Ingredients:
+            
+            2 shots of espresso
+            Whipped cream
+
+            Instructions:
+            
+            Prepare 2 shots of espresso in a mug or a tall glass.
+            Top the espresso with a generous amount of whipped cream.
+            " onclick="showOverlay(this)">
+                <img src="vienna.webp" width="100px" height="100px">
+                <h1>Vienna</h1>
+            </div>
+    </div>
+    <div class="card">
+        <div class="card_title" data-text="
+        Affogato
+
+        Ingredients:
+        
+        1 shot of espresso
+        1 scoop of vanilla ice cream
+
+        Instructions:
+        
+        Place a scoop of vanilla ice cream in a dessert glass or cup.
+        Pour a hot shot of espresso over the ice cream and serve immediately.
+        " onclick="showOverlay(this)">
+            <img src="affogato.webp" width="100px" height="100px">
+            <h1>Affogato</h1>
+        </div>
+</div>
+    </div>
+            </div>
+            <div class="row4">
+                <div class="card_section">
+                    <div class="card">
+                        <div class="card_title" data-text="
+                        Iced Coffee
+        
+                        Ingredients:
+                        
+                        Ground coffee
+                        Cold water
+                        Ice cubes
+        
+                        Instructions:
+                        
+                        Brew coffee using cold water, allowing it to steep overnight in the fridge.
+                        Fill a glass with ice cubes.
+                        Pour the cold brew coffee over the ice and serve.
+                        " onclick="showOverlay(this)">
+                            <img src="iced.webp" >
+                            <h1>Iced Coffee</h1>
+                        </div>
+                </div>
+    </div>
+
+        </div>
+
+        <div id="overlay" onclick="hideOverlay()">
+            <div class="overlaycontent">
+                <div class="overlay_text">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="footer">
+        <!-- This section divides the footer into three sections -->
+        <div class="section1">
+            <p>© 2024 Betterbarista.</p>
+            <p>This project is created for educational purposes.</p>
+        </div>
+        
+        <div class="section2">
+            <p>Contact me at: seannmitchelson@gmail.com</p>
+        </div>
+        
+        <div class="section3">
+            <p>Acknowledgements to d3.js</p>
+            <p><a href="website.html">Return to Homepage</a></p>
+        </div>
+    </div>
+
+    <!-- The scripts for the page -->
+
+    <!-- The script for the navigation bar -->
+    <script src="navbar.js"></script>
+
+    <!-- The script for the encyclopaedia overlay-->
+    <script src="enclyclopaedia.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- The head for all of the code that isnt directly of the page -->
+<head>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Homepage  | Betterbarista</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<!-- The body for all of the visible code -->
+<body>
+    <!-- Containts the navigation bar elements -->
+    <div id="navbar">
+        <img src="logo.png" height="41px" width="117px">
+        <a href="index.html">Homepage</a>
+        <a href="encyclopaedia.html">Encyclopaedia</a>
+        <a href="wheel.html">Coffee Wheel</a>
+        <a href="coffeebrew.html">Coffee Brewing</a>
+    </div>
+
+    <!-- The hero section of the page -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Betterbarista</h1>
+            <p>Here at Betterbarista, we aim to provide you with the best resources to help you become a better barista. Whether you are a beginner or an experienced barista, we have something for everyone. Our encyclopaedia contains a wealth of information on coffee, from the different types of coffee beans to the various brewing methods. We also have a coffee wheel to help you understand the different flavour profiles of coffee, as well as tips and tricks to help you improve your barista skills. So why wait? Start exploring and become a better barista today!</p>
+        </div>
+    </div>
+
+    <!-- The main body of the page -->
+    <div class="main">
+        <!-- This section divides the main body into rows -->
+        <div class="rows">
+            <div class="row1">
+                <!-- This part divides each row into columns -->
+                <div class="column2">
+                    <img src="img1.webp" width="300" height="300">
+                </div>
+                <div class="column1">
+                    <p>Learn how to brew the perfect cup of coffee with our comprehensive guide to coffee brewing. Whether you prefer a classic French press or a modern espresso machine, we have all the information you need to brew your coffee just the way you like it. From the best coffee-to-water ratios to the ideal brewing temperatures, our guide covers everything you need to know to brew the perfect cup of coffee. We also provide tips and tricks to help you improve your brewing skills, so you can enjoy a delicious cup of coffee every time. So why wait? Start brewing your perfect cup of coffee today!</p>
+                </div>
+
+            </div>
+            <div class="row2">
+                <div class="column2">
+                    <p>Explore the complex and nuanced world of coffee flavors with our Coffee Flavor Wheel. This interactive tool is designed to help you identify and understand the diverse taste notes found in different coffee varieties. From the rich, chocolatey undertones of a dark roast to the bright, fruity notes of a light roast, the Coffee Flavor Wheel makes it easy to broaden your palate and describe your coffee experience like a pro. Use the wheel while tasting to pinpoint specific flavors, or simply browse to learn more about the flavors you might find in your next cup. It's a sensory journey that will take your love of coffee to new heights</p>
+                </div>
+                <div class="column1">
+                    <img src="img2.webp" width="300" height="300">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="footer">
+        <!-- This section divides the footer into three sections -->
+        <div class="section1">
+            <p>© 2024 Betterbarista.</p>
+            <p>This project is created for educational purposes.</p>
+        </div>
+        
+        <div class="section2">
+            <p>Contact me at: seannmitchelson@gmail.com</p>
+        </div>
+        
+        <div class="section3">
+            <p>Acknowledgements to d3.js</p>
+            <p><a href="index.html">Return to Homepage</a></p>
+        </div>
+    </div>
+
+    <!-- The scripts for the page -->
+
+    <!-- The script for the navigation bar -->
+    <script src="navbar.js"></script>
+
+    <!-- The script to play music as a shared worker -->
+    <script>
+        if (!!window.SharedWorker) { // Check if browser supports Shared Worker
+            var worker = new SharedWorker('music.js'); // Create a new worker
+            worker.port.start(); // Start the worker
+        } else {
+            console.log("Shared Worker Not Supported");
+        }
+    </script>
+    
+</body>
+</html>

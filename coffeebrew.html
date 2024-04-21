@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- The head for all of the code that isnt directly of the page -->
+<head>
+    <!-- The favicon for the page -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Coffee Brewing | Betterbarista</title>
+    
+    <!-- The stylesheet for the page -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<!-- The body for all of the visible code -->
+<body>
+    <!-- Containts the navigation bar elements -->
+    <div id="navbar">
+        <img src="logo.png" height="41px" width="117px">
+        <a href="index.html">Homepage</a>
+        <a href="encyclopaedia.html">Encyclopaedia</a>
+        <a href="wheel.html">Coffee Wheel</a>
+        <a href="coffeebrew.html">Coffee Brewing</a>
+    </div>
+
+    <!-- The hero section of the page -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Coffee Brew</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- The main body of the page -->
+    <div class="main">
+        <!-- This section divides the main body into rows -->
+        <div class="rows">
+            <div class="row1">
+                <!-- This part divides each row into columns -->
+                <div class="column1">
+                <!-- This is the container for the coffee brewing guide -->
+                <div class="brew-container">
+                    <!-- This is the top of the brew container showing
+                         which section you are one-->
+                    <div class="brew-header">
+                        <h1 id="head-text"></h1>
+                        <p id="reset" style="display: none;">back</p>
+                    </div>
+                    <!-- This is the container for the brewing choices -->
+                    <div class="brew-choices">
+                        <!-- Each of the options the user can pick from-->
+                        <button id="option0" style="display: block;">Click to start</button>
+                        <button id="option1" style="display: none;"></button>
+                        <button id="option2" style="display: none;"></button>
+                        <button id="option3" style="display: none;"></button>
+                        <button id="option4" style="display: none;"></button>
+                        <button id="option5" style="display: none;"></button>
+                        <button id="option6" style="display: none;"></button>
+                        <button id="option7" style="display: none;"></button>
+                        <button id="option8" style="display: none;"></button>
+                        
+                    
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="brew-info">
+                        <p id="info-text"></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <!-- The footer of the page -->
+    <div class="footer">
+        <!-- This section divides the footer into three sections -->
+        <div class="section1">
+            <p>© 2024 Betterbarista.</p>
+            <p>This project is created for educational purposes.</p>
+        </div>
+        
+        <div class="section2">
+            <p>Contact me at: seannmitchelson@gmail.com</p>
+        </div>
+        
+        <div class="section3">
+            <p>Acknowledgements to d3.js</p>
+            <p><a href="index.html">Return to Homepage</a></p>
+        </div>
+    </div>
+
+    <!-- The scripts for the page -->
+
+    <!-- The script for the navigation bar -->
+    <script src="navbar.js"></script>
+
+    <!-- The script for the coffee brewing guide -->
+    <script src="coffeebrew.js"></script>
+</body>
+</html>
